@@ -91,13 +91,6 @@ public class MeFragment extends Fragment {
         tvChange.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), ChooseColorActivity.class);
             startActivity(intent);
-            /*ChangeColorPop pop = new ChangeColorPop(activity);
-            pop.setShowAnimation(AnimationHelper.asAnimation()
-                            .withAlpha(AlphaConfig.IN)
-                            .toShow())
-                    .setDismissAnimation(AnimationHelper.asAnimation()
-                            .withAlpha(AlphaConfig.OUT)
-                            .toShow()).showPopupWindow();*/
         });
 
         tvClear.setOnClickListener(v -> {
@@ -128,6 +121,11 @@ public class MeFragment extends Fragment {
             if (!pop.isShowing()) {
                 pop.showPopupWindow();
             }
+        });
+
+        view.findViewById(R.id.tv_about).setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), AboutUsActivity.class);
+            startActivity(intent);
         });
     }
 

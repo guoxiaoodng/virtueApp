@@ -30,6 +30,7 @@
         </activity>
 
         <activity android:name=".ChooseColorActivity"/>
+        <activity android:name=".AboutUsActivity"/>
     </application>
 
 </manifest>
